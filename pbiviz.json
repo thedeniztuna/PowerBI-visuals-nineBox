@@ -1,0 +1,25 @@
+{
+    "visual": {
+        "name": "nineBox",
+        "displayName": "nineBox",
+        "guid": "nineBox4A7E574D681741E698F60CB345057E88",
+        "visualClassName": "NineBox",
+        "version": "1.0.0",
+        "description": "9-Box Grid Custom Visual",
+        "supportUrl": "https://github.com/bytesup",
+        "gitHubUrl": "https://github.com/bytesup/nineBox"
+    },
+    "apiVersion": "3.8.0",
+    "author": {
+        "name": "Deniz Tuna",
+        "email": "deniztunatr@gmail.com"
+    },
+    "assets": {
+        "icon": "assets/icon.jpeg"
+    },
+    "externalJS": null,
+    "style": "style/nineBox.less",
+    "capabilities": "capabilities.json",
+    "dependencies": null,
+    "stringResources": []
+}
