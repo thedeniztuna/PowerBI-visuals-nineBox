@@ -6,8 +6,8 @@
         "visualClassName": "NineBox",
         "version": "1.0.0",
         "description": "9-Box Grid Custom Visual",
-        "supportUrl": "https://github.com/bytesup",
-        "gitHubUrl": "https://github.com/bytesup/nineBox"
+        "supportUrl": "https://github.com/thedeniztuna",
+        "gitHubUrl": "https://github.com/thedeniztuna/PowerBI-visuals-nineBox"
     },
     "apiVersion": "3.8.0",
     "author": {
