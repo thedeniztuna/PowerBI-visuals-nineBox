@@ -98,15 +98,15 @@ export class NineBox implements IVisual {
             this.boxHL.setAttribute("id", "boxHL");
 
             // Writing headers
-            this.pLH.appendChild(document.createTextNode("Low Performer - High Potential"));
-            this.pMH.appendChild(document.createTextNode("Moderate Performer - High Potential"));
-            this.pHH.appendChild(document.createTextNode("High Performer - High Potential"));
-            this.pLM.appendChild(document.createTextNode("Low Performer - Moderate Potential"));
-            this.pMM.appendChild(document.createTextNode("Moderate Performer - Moderate Potential"));
-            this.pHM.appendChild(document.createTextNode("High Performer - Moderate Potential"));
-            this.pLL.appendChild(document.createTextNode("Low Performer - Low Potential"));
-            this.pML.appendChild(document.createTextNode("Moderate Performer - Low Potential"));
-            this.pHL.appendChild(document.createTextNode("High Performer - Low Potential"));
+            this.pLH.appendChild(document.createTextNode("Potential Gem"));
+            this.pMH.appendChild(document.createTextNode("High Potential"));
+            this.pHH.appendChild(document.createTextNode("Star"));
+            this.pLM.appendChild(document.createTextNode("Inconsistent Player"));
+            this.pMM.appendChild(document.createTextNode("Core Player"));
+            this.pHM.appendChild(document.createTextNode("High Performer"));
+            this.pLL.appendChild(document.createTextNode("Risk"));
+            this.pML.appendChild(document.createTextNode("Avarage Performer"));
+            this.pHL.appendChild(document.createTextNode("Solid Performer"));
 
             // Adding HTML elements (headers and lists) to boxes
             this.boxLH.appendChild(this.pLH).appendChild(this.listLH);
