@@ -41,7 +41,7 @@ export class NineBox implements IVisual {
     private target: HTMLElement;
     private settings: VisualSettings;
 
-    // Creating HEADERS elements
+    // Creating HEADER elements
     private pLH: HTMLElement = document.createElement("p");
     private pMH: HTMLElement = document.createElement("p");
     private pHH: HTMLElement = document.createElement("p");
@@ -97,7 +97,7 @@ export class NineBox implements IVisual {
             this.boxML.setAttribute("id", "boxML");
             this.boxHL.setAttribute("id", "boxHL");
 
-            // Writing headers
+            // Adding headers
             this.pLH.appendChild(document.createTextNode("Potential Gem"));
             this.pMH.appendChild(document.createTextNode("High Potential"));
             this.pHH.appendChild(document.createTextNode("Star"));
@@ -217,5 +217,5 @@ export class NineBox implements IVisual {
     public enumerateObjectInstances(options: EnumerateVisualObjectInstancesOptions): VisualObjectInstance[] | VisualObjectInstanceEnumerationObject {
         return VisualSettings.enumerateObjectInstances(this.settings || VisualSettings.getDefault(), options);
     }
-    
+
 }
