@@ -9,10 +9,12 @@ After cloning the nineBox repository, run the following command to install neces
 
 `npm install`
 
-##Starting the development server
+## Starting the development server
+Using the following command will run the visual server.
 
 `pbiviz start`
 
-##Creating package from the project
+## Creating package from the project
+For creating the project package, use the following command.
 
 `pbiviz package`
