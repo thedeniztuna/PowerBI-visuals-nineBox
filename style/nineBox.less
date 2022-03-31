@@ -1,0 +1,58 @@
+div {
+    display: flex;  
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: stretch;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+    
+    .box-size{
+        border: 2px solid white;
+        flex: 1 0 calc(calc(100%/3) - 4px); /* explanation below */
+        height: calc(calc(100%/3) - 4px) !important;
+        min-height: 50px;
+        overflow: hidden;
+    } 
+
+    box {
+        .box-size();
+        overflow-y: auto;
+
+        &#boxLH { background: yellow;}
+        &#boxMH { background: yellowgreen;}
+        &#boxHH { background: green;}
+        &#boxLM { background: orangered;}
+        &#boxMM { background: yellow;}
+        &#boxHM { background: yellowgreen;}
+        &#boxLL { background: red;}
+        &#boxML { background: orangered;}
+        &#boxHL { background: yellow;}
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 10px;
+            li {
+                font-weight: normal;
+
+                &:hover {    
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+p {
+    font-size: 10px;
+    font-weight: bold;
+    vertical-align: middle;
+    text-align: start;
+    padding: 0 16px 0 16px;
+    em {
+        background: yellow;
+        padding: 5px;
+    }
+}

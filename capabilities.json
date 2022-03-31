@@ -1,0 +1,178 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Performance Data (X-Axis)",
+            "name": "performance",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "Potential Data (Y-Axis)",
+            "name": "potential",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "Name",
+            "name": "name",
+            "kind": "Grouping"
+        }
+    ],
+    "objects": {
+        "nineBox": {
+            "displayName": "Box colors",
+            "properties": {
+                "useCustomColors": {
+                    "displayName": "Custom Colors",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "boxLHColor": {
+                    "displayName": "LH Color",
+                    "type":{
+                        "fill":{
+                            "solid":{
+                                "color":true
+                            }
+                        }
+                    }
+                },
+                "boxMHColor": {
+                    "displayName": "MH Color",
+                    "type":{
+                        "fill":{
+                            "solid":{
+                                "color":true
+                            }
+                        }
+                    }
+                },
+                "boxHHColor": {
+                    "displayName": "HH Color",
+                    "type":{
+                        "fill":{
+                            "solid":{
+                                "color":true
+                            }
+                        }
+                    }
+                },
+                "boxLMColor": {
+                    "displayName": "LM Color",
+                    "type":{
+                        "fill":{
+                            "solid":{
+                                "color":true
+                            }
+                        }
+                    }
+                },
+                "boxMMColor": {
+                    "displayName": "MM Color",
+                    "type":{
+                        "fill":{
+                            "solid":{
+                                "color":true
+                            }
+                        }
+                    }
+                },
+                "boxHMColor": {
+                    "displayName": "HM Color",
+                    "type":{
+                        "fill":{
+                            "solid":{
+                                "color":true
+                            }
+                        }
+                    }
+                },
+                "boxLLColor": {
+                    "displayName": "LL Color",
+                    "type":{
+                        "fill":{
+                            "solid":{
+                                "color":true
+                            }
+                        }
+                    }
+                },
+                "boxMLColor": {
+                    "displayName": "ML Color",
+                    "type":{
+                        "fill":{
+                            "solid":{
+                                "color":true
+                            }
+                        }
+                    }
+                },
+                "boxHLColor": {
+                    "displayName": "HL Color",
+                    "type":{
+                        "fill":{
+                            "solid":{
+                                "color":true
+                            }
+                        }
+                    }
+                },
+                 "fontSize": {
+                    "displayName": "Text Size",
+                    "type": {
+                        "formatting": {
+                            "fontSize": true
+                        }
+                    }
+                },
+                "filter": {
+                    "type": {
+                        "filter": true
+                    }
+                }
+            }
+        }
+    },
+    "dataViewMappings": [
+        {
+            "conditions": [
+                {
+                    "performance": {
+                        "max": 1
+                    },
+                    "potential": {
+                        "max": 1
+                    },
+                    "names": {
+                        "max": 1
+                    }
+                    
+                }
+            ],
+            "categorical": {
+                "categories": {
+                    "for": {
+                        "in": "name"
+                    }
+                },
+                "values": {
+                    "select": [
+                        {
+                            "bind": {
+                                "to": "potential"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "performance"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "suppressDefaultTitle": true,
+    "sorting": {
+        "default": {   }
+    }
+}
