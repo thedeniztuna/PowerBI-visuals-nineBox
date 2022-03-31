@@ -105,7 +105,7 @@ export class NineBox implements IVisual {
             this.pMM.appendChild(document.createTextNode("Core Player"));
             this.pHM.appendChild(document.createTextNode("High Performer"));
             this.pLL.appendChild(document.createTextNode("Risk"));
-            this.pML.appendChild(document.createTextNode("Avarage Performer"));
+            this.pML.appendChild(document.createTextNode("Average Performer"));
             this.pHL.appendChild(document.createTextNode("Solid Performer"));
 
             // Adding HTML elements (headers and lists) to boxes
